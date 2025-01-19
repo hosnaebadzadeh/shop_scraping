@@ -14,7 +14,6 @@ try:
     search_box.send_keys(ask)
     search_box.send_keys(Keys.RETURN)
 
-    # extract info
     while True:
         products = driver.find_elements(By.CSS_SELECTOR, ".s-item")
         print(f"Number of products found on this page: {len(products)}")
